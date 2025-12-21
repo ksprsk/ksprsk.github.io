@@ -3,27 +3,35 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+**ks** · 지병찬 (Chi, Byoungchan)<br>
+Born May 24, 2002
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+---
 
-There are currently two themes built on Poole:
+## Interests
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+*Tedious*
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+- Bridging abstract concepts and applications
+- Math (structure, not computation)
+- Cryptography
+- Computational Psychology ([Why?](https://ksprsk.me))
+- Self-control, habit formation (ADHD)
+- Late Wittgenstein, *On Certainty*
 
-## Setup
+*For Fun*
 
-Some fun facts about the setup of this project include:
+- Project Sekai, Vocaloid (Jin, iyowa)
+- BMS/rhythm games, Manga
+- Arsenal since 2020, FM (retired)
 
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
+*...and things I've forgotten*
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+---
 
-Thanks for reading!
+## Contact
+
+Social: [X](https://x.com/ksprsk_) · [Instagram](https://instagram.com/ks_byoungchan) · Discord (ksprsk)<br>
+Work: [GitHub](https://github.com/ksprsk) · bchan052415@gmail.com
+
+[CV](/cv.pdf)
