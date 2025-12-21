@@ -1,17 +1,17 @@
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
+title:               ksprsk.me
+tagline:             '지극히 개인적이고 지루하고 현학적인'
+description:         '"그러나 근거의 제시, 증거의 정당화는 끝에 이른다 — 하지만 그 끝은 어떤 명제들이 우리에게 즉각적으로 참으로서 자명해지는 것, 즉 우리 편에서의 일종의 「봄」이 아니다. 오히려 그것은 우리의 행위이며, 이 행위야말로 언어-게임의 근저에 놓여 있다."<br>— 루트비히 비트겐슈타인, <br><i>확실성에 관하여</i>, §204'
+url:                 https://ksprsk.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              지병찬(Chi, Byoungchan)
+  url:               https://x.com/ksprsk_
+  email:             bchan052415@gmail.com
 
 # Gems
 plugins:
