@@ -1,7 +1,7 @@
 # Setup
 title:               ksprsk.me
 tagline:             '지극히 개인적이고 지루하고 현학적인'
-description:         '"그러나 근거의 제시, 증거의 정당화는 끝에 이른다 — 하지만 그 끝은 어떤 명제들이 우리에게 즉각적으로 참으로서 자명해지는 것, 즉 우리 편에서의 일종의 「봄」이 아니다. 오히려 그것은 우리의 행위이며, 이 행위야말로 언어-게임의 근저에 놓여 있다."<br>— 루트비히 비트겐슈타인, <br><i>확실성에 관하여</i>, §204'
+description:         '"Don&#39;t think, but look!"<br> — Wittgenstein'
 url:                 https://ksprsk.me
 baseurl:             ''
 paginate:            5
