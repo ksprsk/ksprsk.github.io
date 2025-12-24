@@ -4,7 +4,6 @@ tagline:             '지극히 개인적이고 지루하고 현학적인'
 description:         '"Don&#39;t think, but look!"<br> — Wittgenstein'
 url:                 https://ksprsk.me
 baseurl:             ''
-paginate:            5
 permalink:           pretty
 
 # About/contact
@@ -14,8 +13,7 @@ author:
   email:             bchan052415@gmail.com
 
 # Gems
-plugins:
-  - jekyll-paginate
+plugins: []
 
 # Custom vars
 version:             1.1.0
