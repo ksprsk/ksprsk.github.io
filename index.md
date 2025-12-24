@@ -7,6 +7,8 @@ sidebar_order: 1
 
 {% assign notes = site.categories.note %}
 {% assign articles = site.categories.article %}
+{% assign note_found = "" %}
+{% assign article_found = "" %}
 
 **[Note](/categories/note/)** ({{ notes.size }}): {% for post in notes %}{% for cat in post.categories %}{% if cat != "note" %}{% capture subcat_check %},{{ cat }},{% endcapture %}{% unless note_found contains subcat_check %}{% capture note_found %}{{ note_found }}{{ subcat_check }}{% endcapture %}[{{ cat }}](/categories/note/{{ cat }}/) {% endunless %}{% endif %}{% endfor %}{% endfor %}
 
