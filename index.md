@@ -8,15 +8,9 @@ sidebar_order: 1
 {% assign notes = site.categories.note %}
 {% assign articles = site.categories.article %}
 
-**[Note](/categories/note/)** ({{ notes.size }})
-{% assign note_subcats = "" | split: "" %}
-{% for post in notes %}{% for cat in post.categories %}{% if cat != "note" %}{% unless note_subcats contains cat %}{% assign note_subcats = note_subcats | push: cat %}{% endunless %}{% endif %}{% endfor %}{% endfor %}
-{% if note_subcats.size > 0 %}: {% for subcat in note_subcats %}[{{ subcat }}](/categories/note/{{ subcat }}/){% unless forloop.last %} · {% endunless %}{% endfor %}{% endif %}
+**[Note](/categories/note/)** ({{ notes.size }}): {% for post in notes %}{% for cat in post.categories %}{% if cat != "note" %}{% capture subcat_check %},{{ cat }},{% endcapture %}{% unless note_found contains subcat_check %}{% capture note_found %}{{ note_found }}{{ subcat_check }}{% endcapture %}[{{ cat }}](/categories/note/{{ cat }}/) {% endunless %}{% endif %}{% endfor %}{% endfor %}
 
-**[Article](/categories/article/)** ({{ articles.size }})
-{% assign article_subcats = "" | split: "" %}
-{% for post in articles %}{% for cat in post.categories %}{% if cat != "article" %}{% unless article_subcats contains cat %}{% assign article_subcats = article_subcats | push: cat %}{% endunless %}{% endif %}{% endfor %}{% endfor %}
-{% if article_subcats.size > 0 %}: {% for subcat in article_subcats %}[{{ subcat }}](/categories/article/{{ subcat }}/){% unless forloop.last %} · {% endunless %}{% endfor %}{% endif %}
+**[Article](/categories/article/)** ({{ articles.size }}): {% for post in articles %}{% for cat in post.categories %}{% if cat != "article" %}{% capture subcat_check %},{{ cat }},{% endcapture %}{% unless article_found contains subcat_check %}{% capture article_found %}{{ article_found }}{{ subcat_check }}{% endcapture %}[{{ cat }}](/categories/article/{{ cat }}/) {% endunless %}{% endif %}{% endfor %}{% endfor %}
 
 ---
 
