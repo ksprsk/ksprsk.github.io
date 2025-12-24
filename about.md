@@ -6,7 +6,7 @@ title: About
 **ks** · 지병찬 (Chi, Byoungchan)<br>
 Born May 24, 2002
 
-> "그러나 근거의 제시, 증거의 정당화는 끝에 이른다 — 하지만 그 끝은 어떤 명제들이 우리에게 즉각적으로 참으로서 자명해지는 것, 즉 우리 편에서의 일종의 「봄」이 아니다. 오히려 그것은 우리의 행위이며, 이 행위야말로 언어-게임의 근저에 놓여 있다."
+> "Die Begründung aber, die Rechtfertigung der Evidenz kommt zu einem Ende; – das Ende aber ist nicht, daß uns gewisse Sätze unmittelbar als wahr einleuchten, also eine Art *Sehen* unsrerseits, sondern unser *Handeln*, welches am Grunde des Sprachspiels liegt."
 >
 > — Wittgenstein, *On Certainty*, [§204](/OC_204)
 
@@ -17,10 +17,10 @@ Born May 24, 2002
 *Tedious*
 
 - Bridging abstract concepts and applications
-- Math (structure, not computation)
-- Cryptography
-- Computational Psychology ([Why?](https://ksprsk.me))
-- Self-control and habit formation (ADHD)
+- Math (abstraction & structure, not computation)
+- Cryptography, Cryptanalysis
+- Mathematical/Computational Psychology ([Why not Psychology?](https://ksprsk.me))
+- Self-control and habit formation (due to ADHD)
 - Late Wittgenstein, especially *On Certainty*
 - LLMs and other AI as tools
 
