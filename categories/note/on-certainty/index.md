@@ -5,7 +5,7 @@ title: "Note: On Certainty"
 
 # Note: On Certainty
 
-{% assign posts = site.posts | where_exp: "post", "post.categories contains 'note' and post.categories contains 'on-certainty'" %}
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'note'" | where_exp: "post", "post.categories contains 'on-certainty'" %}
 {% if posts.size > 0 %}
 *{{ posts.size }} posts*
 
