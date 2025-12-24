@@ -2,10 +2,16 @@
 layout: page
 title: Archives
 sidebar: true
-sidebar_order: 4
+sidebar_order: 5
 ---
 
-{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% assign filtered_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% unless post.categories contains "daily" %}
+    {% assign filtered_posts = filtered_posts | push: post %}
+  {% endunless %}
+{% endfor %}
+{% assign postsByYear = filtered_posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 {% for year in postsByYear %}
 ## {{ year.name }}
 

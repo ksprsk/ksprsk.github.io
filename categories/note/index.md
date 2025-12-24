@@ -2,7 +2,7 @@
 layout: page
 title: Note
 sidebar: true
-sidebar_order: 2
+sidebar_order: 3
 ---
 
 # Note

@@ -8,20 +8,16 @@ layout: default
   {{ content }}
 </div>
 
-{% if site.related_posts.size >= 1 %}
+{% if page.categories.size >= 1 %}
 <div class="related">
-  <h2>Related posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
+  <h2>Categories</h2>
+  <p>
+    {% assign top_cat = page.categories | first %}
+    <a href="/categories/{{ top_cat }}/">{{ top_cat }}</a>
+    {% if page.categories.size > 1 %}
+      {% assign sub_cat = page.categories | last %}
+      · <a href="/categories/{{ top_cat }}/{{ sub_cat }}/">{{ sub_cat }}</a>
+    {% endif %}
+  </p>
 </div>
 {% endif %}
