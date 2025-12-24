@@ -6,7 +6,7 @@ categories: [note]
 
 **AI로 작성되었으며, 반드시 수정되어야 함**
 
-선행 글: [인식론적 회의주의](/2024/12/25/epistemological-skepticism/)
+선행 글: [인식론적 회의주의]({% post_url 2025-12-25-epistemological-skepticism %})
 
 ---
 
@@ -77,4 +77,4 @@ G.E. 무어는 1939년 영국 학술원 강연에서 손을 들어 보이며 말
 
 ## 참고
 
-- 비트겐슈타인의 분석: [On Certainty §1-9](/2024/12/25/on-certainty-1-9/)
+- 비트겐슈타인의 분석: [On Certainty §1-9]({% post_url 2025-12-25-on-certainty-1-9 %})

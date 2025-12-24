@@ -23,7 +23,7 @@ categories: [note, on-certainty]
 - **sicher**: 확실한
 - **komisch**: 재미있는, 기묘한. H. Newman은 존 헨리 뉴먼 추기경으로 추정
 
-이 문장을 이해하기 위해선, 우선 G.E. 무어의 "외부 세계 증명"에 관한 이해가 선행되어야한다. [참고](/2024/12/25/moore-proof-external-world/)
+이 문장을 이해하기 위해선, 우선 G.E. 무어의 "외부 세계 증명"에 관한 이해가 선행되어야한다. [참고]({% post_url 2025-12-25-moore-proof-external-world %})
 
 "hier eine Hand ist"는 G.E. 무어의 "외부 세계 증명"을 직접 언급한 것. 무어는 손을 들어 보이며 "여기 손이 있다"고 말함으로써 외부 세계의 존재를 증명했다고 주장했다.
 
