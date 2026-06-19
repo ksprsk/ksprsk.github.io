@@ -3,6 +3,10 @@ _gh_pages
 _site
 .ruby-version
 .jekyll-cache
+_config_dev.yml
+
+# Local-only drafts (not deployed to GH Pages)
+_drafts/
 
 # Numerous always-ignore extensions
 *.diff

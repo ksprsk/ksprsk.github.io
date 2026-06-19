@@ -11,7 +11,7 @@
   <nav class="sidebar-nav">
     {% assign pages_list = site.pages | where: "sidebar", true | sort: "sidebar_order" %}
     {% for node in pages_list %}
-      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+      <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
     {% endfor %}
   </nav>
 
