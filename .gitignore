@@ -4,6 +4,8 @@ _site
 .ruby-version
 .jekyll-cache
 _config_dev.yml
+.bundle/
+vendor/bundle/
 
 # Local-only drafts (not deployed to GH Pages)
 _drafts/

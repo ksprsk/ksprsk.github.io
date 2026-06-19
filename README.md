@@ -1,5 +1,29 @@
 # ksprsk.me
 
+## 로컬 실행
+
+| 명령어 | 용도 |
+|-------|------|
+| `make dev` | 로컬 개발 서버 실행. `_config_dev.yml`이 있으면 함께 적용하고, 저장 시 자동 새로고침. |
+| `make preview` | 배포 설정에 가까운 로컬 서버 실행. `_config.yml`만 사용하고, 저장 시 자동 새로고침. |
+| `make build` | 배포 설정으로 정적 파일만 빌드. 서버는 띄우지 않음. |
+| `make build-dev` | 로컬 개발 설정까지 포함해서 정적 파일만 빌드. |
+| `make clean` | Jekyll 빌드 결과와 캐시 정리. |
+
+보통은:
+
+```bash
+make dev
+```
+
+WSL에서 띄우고 Windows 브라우저로 접속이 안 되면:
+
+```bash
+hostname -I
+```
+
+출력된 WSL IP로 `http://<WSL-IP>:4000`에 접속합니다.
+
 ## 글 작성
 
 `_posts/YYYY-MM-DD-제목.md` 생성:
