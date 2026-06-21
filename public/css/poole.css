@@ -227,6 +227,72 @@ blockquote p:last-child {
   }
 }
 
+/* Collapsible sections */
+.post details,
+.page details {
+  margin: 1.25rem 0;
+  padding: 0 1rem .85rem;
+  border-left: .2rem solid #e5e5e5;
+  background-color: #fafafa;
+}
+.post details:not([open]),
+.page details:not([open]) {
+  padding-bottom: 0;
+}
+.post details summary,
+.page details summary {
+  display: flex;
+  align-items: flex-start;
+  gap: .55rem;
+  margin: 0 -1rem;
+  padding: .7rem 1rem;
+  color: #303030;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+.post details summary::-webkit-details-marker,
+.page details summary::-webkit-details-marker {
+  display: none;
+}
+.post details summary::marker,
+.page details summary::marker {
+  content: "";
+}
+.post details summary::before,
+.page details summary::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 0;
+  height: 0;
+  margin-top: .35rem;
+  border-top: .32rem solid transparent;
+  border-bottom: .32rem solid transparent;
+  border-left: .45rem solid #9a9a9a;
+  transition: transform .15s ease;
+}
+.post details[open] > summary,
+.page details[open] > summary {
+  margin-bottom: .85rem;
+  border-bottom: 1px solid #eee;
+}
+.post details[open] > summary::before,
+.page details[open] > summary::before {
+  transform: rotate(90deg);
+}
+.post details summary > *,
+.page details summary > * {
+  margin: 0;
+}
+.post details > *:not(summary),
+.page details > *:not(summary) {
+  margin-left: 1rem;
+}
+.post details > :last-child,
+.page details > :last-child {
+  margin-bottom: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
