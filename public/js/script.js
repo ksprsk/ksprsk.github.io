@@ -13,3 +13,24 @@
     checkbox.checked = false;
   }, false);
 })(document);
+
+(function(window, document) {
+  var sections = document.querySelectorAll('.category-section');
+  if(!sections.length) return;
+
+  function selectedCategory() {
+    return decodeURIComponent(window.location.hash.replace(/^#/, ''));
+  }
+
+  function filterSections() {
+    var category = selectedCategory();
+
+    sections.forEach(function(section) {
+      var matches = !category || section.getAttribute('data-category') === category;
+      section.hidden = !matches;
+    });
+  }
+
+  window.addEventListener('hashchange', filterSections);
+  filterSections();
+})(window, document);

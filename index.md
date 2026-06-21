@@ -10,9 +10,9 @@ sidebar_order: 1
 {% assign note_found = "" %}
 {% assign article_found = "" %}
 
-**[Note](/categories/note/)** ({{ notes.size }}): {% for post in notes %}{% for cat in post.categories %}{% if cat != "note" %}{% capture subcat_check %},{{ cat }},{% endcapture %}{% unless note_found contains subcat_check %}{% capture note_found %}{{ note_found }}{{ subcat_check }}{% endcapture %}[{{ cat }}](/categories/note/{{ cat }}/) {% endunless %}{% endif %}{% endfor %}{% endfor %}
+**[Note](/categories/note/)** ({{ notes.size }}): {% for post in notes %}{% for cat in post.categories %}{% if cat != "note" %}{% capture subcat_check %},{{ cat }},{% endcapture %}{% unless note_found contains subcat_check %}{% capture note_found %}{{ note_found }}{{ subcat_check }}{% endcapture %}[{{ cat }}](/categories/note/#{{ cat | slugify }}) {% endunless %}{% endif %}{% endfor %}{% endfor %}
 
-**[Article](/categories/article/)** ({{ articles.size }}): {% for post in articles %}{% for cat in post.categories %}{% if cat != "article" %}{% capture subcat_check %},{{ cat }},{% endcapture %}{% unless article_found contains subcat_check %}{% capture article_found %}{{ article_found }}{{ subcat_check }}{% endcapture %}[{{ cat }}](/categories/article/{{ cat }}/) {% endunless %}{% endif %}{% endfor %}{% endfor %}
+**[Article](/categories/article/)** ({{ articles.size }}): {% for post in articles %}{% for cat in post.categories %}{% if cat != "article" %}{% capture subcat_check %},{{ cat }},{% endcapture %}{% unless article_found contains subcat_check %}{% capture article_found %}{{ article_found }}{{ subcat_check }}{% endcapture %}[{{ cat }}](/categories/article/#{{ cat | slugify }}) {% endunless %}{% endif %}{% endfor %}{% endfor %}
 
 ---
 
