@@ -231,7 +231,7 @@ blockquote p:last-child {
 .post details,
 .page details {
   margin: 1.25rem 0;
-  padding: 0 1rem .85rem;
+  padding: 0 1rem .85rem 2rem;
   border-left: .2rem solid #e5e5e5;
   background-color: #fafafa;
 }
@@ -244,7 +244,7 @@ blockquote p:last-child {
   display: flex;
   align-items: flex-start;
   gap: .55rem;
-  margin: 0 -1rem;
+  margin: 0 -1rem 0 -2rem;
   padding: .7rem 1rem;
   color: #303030;
   font-weight: bold;
@@ -284,9 +284,14 @@ blockquote p:last-child {
 .page details summary > * {
   margin: 0;
 }
-.post details > *:not(summary),
-.page details > *:not(summary) {
-  margin-left: 1rem;
+.post details > p:has(> mjx-container:only-child),
+.page details > p:has(> mjx-container:only-child) {
+  text-align: center;
+  overflow-x: auto;
+}
+.post details > p:has(> mjx-container:only-child) > mjx-container,
+.page details > p:has(> mjx-container:only-child) > mjx-container {
+  display: inline-block;
 }
 .post details > :last-child,
 .page details > :last-child {
